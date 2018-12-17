@@ -17,7 +17,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
 
-description='monitor_tuning'
+description = 'monitor_tuning'
 group = 'com.cheng'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -29,7 +29,10 @@ repositories {
 }
 
 dependencies {
+
+    compile 'org.ow2.asm:asm:5.0.4'
     compile 'org.springframework.boot:spring-boot-starter-web'
+
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
